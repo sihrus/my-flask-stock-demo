@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, redirect
+import numpy as np
+import pandas as pd
+import Quandl
 
 app = Flask(__name__)
 
