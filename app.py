@@ -15,7 +15,7 @@ def main():
 def index():
   return render_template('index.html')
   
-@app.route('/index', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def post_ticker():
   print "MADE IT HERE 3"
   print "MADE IT HERE 4"
