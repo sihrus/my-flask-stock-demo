@@ -18,11 +18,10 @@ def index():
 @app.route('/index', methods=['GET','POST'])
 def post_ticker():
   print "MADE IT HERE 3"
-  if request.method == 'POST':
-    print "MADE IT HERE 4"
-    stock = request.form['ticker']
-    print stock
-    #return redirect(url_for('graph'))
+  print "MADE IT HERE 4"
+  stock = request.form['ticker']
+  print stock
+  #return redirect(url_for('graph'))
 
 '''  
 @app.route('/graph', methods=['GET','POST'])
