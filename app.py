@@ -20,8 +20,9 @@ def post_ticker():
     print "MADE IT HERE 4"
     stock = request.form['ticker']
     print stock
-    return redirect(url_for('graph'))
-  
+    #return redirect(url_for('graph'))
+
+'''  
 @app.route('/graph', methods=['GET','POST'])
 def graph():
   print "MADE IT HERE 5"
@@ -45,6 +46,7 @@ def graph():
   p.ygrid.band_fill_alpha = 0.1
   script, div = components(p)
   return render_template('graph.html', script=script, div=div)
+'''
 
 if __name__ == '__main__':
   app.run(port=33507)
