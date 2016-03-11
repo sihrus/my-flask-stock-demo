@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, redirect
+from bokeh.plotting import figure, output_notebook, show
+from bokeh.embed import components
 import numpy as np
 import pandas as pd
 import Quandl
